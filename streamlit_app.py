@@ -35,7 +35,7 @@ def get_fruityvice_data(this_fruit_choice):
     return fruityvice_normalized
 
 
-streamlit.header("View Our Fruit List - Add Your Favorites!")
+streamlit.header("Search for a fruit")
 
 try:
   fruit_choice = streamlit.text_input('What fruit would you like information about?')
@@ -50,7 +50,7 @@ except URLError as e:
 
 
 
-streamlit.header("This Fruit Load List Conatains:")
+streamlit.header("View Our Fruit List - Add Your Favorites!")
 #Snowflake-related functions
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
